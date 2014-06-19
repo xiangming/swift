@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html class=" ">
+<head>
+	<title>Swiftist</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta keywords="swift, swiftist, swift语言,swift社区, 编程, 论坛, 教程, 问答, 热门, 新手, 入门, 热门, 最新, 订阅, 分类">
+	<meta description="Swiftist.org是国内领先的swift语言论坛。这里聚集了一大批锐意进取的iOS开发者和swiftist爱好者。Swiftist.org致力于为国内开发者提供详尽的中文文档、代码实例等，助力开发者掌握并使用这门新兴的编程语言。">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<nav class="navbar navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/">Swiftist</a>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="/signup?return_to=%2Ftopics%2Fcategoried%2Fobjc">注册</a>
+				</li>
+				<li>
+					<a href="/login?return_to=%2Ftopics%2Fcategoried%2Fobjc">登录</a>
+				</li>
+				<li class="navbar-toggle">
+					<a class="tiem" data-target="#navbar" data-toggle="collapse" type="button"> <i class="fa fa-bars"></i>
+					</a>
+				</li>
+			</ul>
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="/topics">社区</a>
+					</li>
+					<li>
+						<a href=" http://dev.swiftguide.cn/" target="_blank">新手指南</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">注册</h3>
+						</div>
+						<div class="panel-body">
+							<form accept-charset="UTF-8" action="/users" class="new_user" id="new-user-form" method="post" novalidate="novalidate">
+								<div style="display:none">
+									<input name="utf8" type="hidden" value="✓">
+									<input name="authenticity_token" type="hidden" value="RzyItaPNgBjuYJ6rWKdR89ETY6vNdKBR4IRuKjIJbkM="></div>
+								<div class="form-group">
+									<label class="control-label" for="user_name">全名</label>
+									<input class="form-control" id="user_name" name="user[name]" placeholder="你的全名" tabindex="1" type="text"></div>
+								<div class="form-group">
+									<label class="control-label" for="user_email">Email</label>
+									<input class="form-control" id="user_email" name="user[email]" placeholder="你的邮箱地址" tabindex="2" type="text"></div>
+								<div class="form-group">
+									<label class="control-label" for="user_username">用户名</label>
+									<input class="form-control" id="user_username" name="user[username]" placeholder="挑一个用户名" tabindex="3" type="text"></div>
+								<div class="form-group">
+									<label class="control-label" for="user_password">密码</label>
+									<input class="form-control" id="user_password" name="user[password]" placeholder="选一个密码" tabindex="4" type="password"></div>
+								<input class="btn btn-success" name="commit" tabindex="5" type="submit" value="创建帐号"></form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">$('#new-user-form').validate({
+		  rules: {
+		    'user[name]': {
+		      required: true,
+		    },
+		    'user[email]': {
+		      required: true,
+		      format: /^([^@\s]+)@((?:[a-z0-9-]+\.)+[a-z]{2,})$/i,
+		      remote: '/users/check_email'
+		    },
+		    'user[username]': {
+		      required: true,
+		      remote: '/users/check_username',
+		      format: /^[a-z0-9-]+$/i
+		    },
+		    'user[password]': {
+		      required: true
+		    }
+		  },
+		  messages: {
+		    'user[name]': {
+		      required: '不能为空字符'
+		    },
+		    'user[email]': {
+		      required: '不能为空字符',
+		      remote: '已经被使用',
+		      format: '无效的邮件格式'
+		    },
+		    'user[username]': {
+		      required: '不能为空字符',
+		      remote: '已经被使用',
+		      format: '只能使用字母、数字或 - 号，并且不能以 - 号开头'
+		    },
+		    'user[password]': {
+		      required: '不能为空字符'
+		    }
+		  }
+		});
+	</script>
+</body>
+</html>

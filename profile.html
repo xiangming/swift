@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class=" ">
+<head>
+	<title>个人资料设置 - Swiftist</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta keywords="swift, swiftist, swift语言,swift社区, 编程, 论坛, 教程, 问答, 热门, 新手, 入门, 热门, 最新, 订阅, 分类">
+	<meta description="Swiftist.org是国内领先的swift语言论坛。这里聚集了一大批锐意进取的iOS开发者和swiftist爱好者。Swiftist.org致力于为国内开发者提供详尽的中文文档、代码实例等，助力开发者掌握并使用这门新兴的编程语言。">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<nav class="navbar navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/">Swiftist</a>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a class="notifications-bell" href="/notifications"> <i class="fa fa-bell-o"></i>
+					</a>
+				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						<img class="img-circle img-avatar" src="https://secure.gravatar.com/avatar/fafb3a51d24bb83cc1e8fb819ab6b2f6.png?d=wavatar&amp;r=G&amp;s=48">
+						向明 <i class="fa fa-caret-down"></i>
+					</a>
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li>
+							<a href="/~xiangming">个人资料</a>
+						</li>
+						<li class="divider"></li>
+						<li class="dropdown-header">收藏</li>
+						<li>
+							<a href="/~xiangming/topics/likes">话题</a>
+						</li>
+						<li>
+							<a href="/~xiangming/comments/likes">评论</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a href="/settings/account">设置</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a data-method="delete" href="/logout">退出</a>
+						</li>
+					</ul>
+				</li>
+				<li class="navbar-toggle">
+					<a class="tiem" data-target="#navbar" data-toggle="collapse" type="button">
+						<i class="fa fa-bars"></i>
+					</a>
+				</li>
+			</ul>
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="/topics">社区</a>
+					</li>
+					<li>
+						<a href=" http://dev.swiftguide.cn/" target="_blank">新手指南</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="list-group">
+						<a class="list-group-item" href="/settings/account">
+							<div class="pull-right">
+								<i class="fa fa-chevron-right"></i>
+							</div>
+							帐号
+						</a>
+						<a class="list-group-item" href="/settings/password">
+							<div class="pull-right">
+								<i class="fa fa-chevron-right"></i>
+							</div>
+							密码
+						</a>
+						<a class="list-group-item active" href="/settings/profile">
+							<div class="pull-right">
+								<i class="fa fa-chevron-right"></i>
+							</div>
+							个人资料
+						</a>
+						<a class="list-group-item" href="/settings/notifications">
+							<div class="pull-right">
+								<i class="fa fa-chevron-right"></i>
+							</div>
+							通知
+						</a>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">个人资料</h3>
+						</div>
+						<div class="panel-body">
+							<form accept-charset="UTF-8" action="/settings/profile" class="form-horizontal user-form" enctype="multipart/form-data" id="edit_user_927" method="post" novalidate="novalidate">
+								<div style="display:none">
+									<input name="utf8" type="hidden" value="✓">
+									<input name="_method" type="hidden" value="patch">
+									<input name="authenticity_token" type="hidden" value="RzyItaPNgBjuYJ6rWKdR89ETY6vNdKBR4IRuKjIJbkM="></div>
+								<div class="form-group">
+									<label class="control-label col-sm-3" for="user_avatar">头像</label>
+									<div class="col-sm-6 user-image-uploader">
+										<div class="image">
+											<img alt="avatar" class="img-rounded" src="https://secure.gravatar.com/avatar/fafb3a51d24bb83cc1e8fb819ab6b2f6.png?d=wavatar&amp;r=G&amp;s=96"></div>
+										<div class="uploader">
+											<input id="user_avatar" name="user[avatar]" tabindex="1" type="file">
+											<div class="checkbox">
+												<label>
+													<input name="user[remove_avatar]" type="hidden" value="0">
+													<input id="user_remove_avatar" name="user[remove_avatar]" tabindex="2" type="checkbox" value="1">Remove avatar</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="control-label col-sm-3" for="user_name">全名</label>
+									<div class="col-sm-6">
+										<input class="form-control" id="user_name" name="user[name]" tabindex="3" type="text" value="向明"></div>
+								</div>
+								<div class="form-group">
+									<label class="control-label col-sm-3" for="user_bio">简介</label>
+									<div class="col-sm-6">
+										<textarea class="form-control" id="user_bio" name="user[bio]" tabindex="4"></textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-6 col-sm-push-3">
+										<input class="btn btn-primary" name="commit" tabindex="5" type="submit" value="保存修改"></div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

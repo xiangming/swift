@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html class=" ">
+<head>
+	<title>新话题 - Swiftist</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta keywords="swift, swiftist, swift语言,swift社区, 编程, 论坛, 教程, 问答, 热门, 新手, 入门, 热门, 最新, 订阅, 分类">
+	<meta description="Swiftist.org是国内领先的swift语言论坛。这里聚集了一大批锐意进取的iOS开发者和swiftist爱好者。Swiftist.org致力于为国内开发者提供详尽的中文文档、代码实例等，助力开发者掌握并使用这门新兴的编程语言。">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<nav class="navbar navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/">Swiftist</a>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a class="notifications-bell" href="/notifications"> <i class="fa fa-bell-o"></i>
+					</a>
+				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						<img class="img-circle img-avatar" src="https://secure.gravatar.com/avatar/fafb3a51d24bb83cc1e8fb819ab6b2f6.png?d=wavatar&amp;r=G&amp;s=48">
+						向明 <i class="fa fa-caret-down"></i>
+					</a>
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li>
+							<a href="/~xiangming">个人资料</a>
+						</li>
+						<li class="divider"></li>
+						<li class="dropdown-header">收藏</li>
+						<li>
+							<a href="/~xiangming/topics/likes">话题</a>
+						</li>
+						<li>
+							<a href="/~xiangming/comments/likes">评论</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a href="/settings/account">设置</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a data-method="delete" href="/logout">退出</a>
+						</li>
+					</ul>
+				</li>
+				<li class="navbar-toggle">
+					<a class="tiem" data-target="#navbar" data-toggle="collapse" type="button">
+						<i class="fa fa-bars"></i>
+					</a>
+				</li>
+			</ul>
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="/topics">社区</a>
+					</li>
+					<li>
+						<a href=" http://dev.swiftguide.cn/" target="_blank">新手指南</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">新话题</h3>
+						</div>
+						<div class="panel-body">
+							<form accept-charset="UTF-8" action="/topics" class="topic-form" data-remote="true" id="new_topic" method="post" novalidate="novalidate">
+								<div style="display:none">
+									<input name="utf8" type="hidden" value="✓">
+								</div>
+								<div class="row">
+									<div class="col-md-9">
+										<div class="form-group">
+											<input class="form-control" id="topic_title" name="topic[title]" placeholder="标题" tabindex="1" type="text"></div>
+									</div>
+									<div class="col-md-3">
+										<div class="form-group">
+											<select class="form-control" id="topic_category_id" name="topic[category_id]" tabindex="2">
+												<option value="">不分类</option>
+												<option value="12">问 &amp; 答</option>
+												<option value="5">杂谈</option>
+												<option value="7">Swift 新手教程</option>
+												<option value="6">Swift 中文指南</option>
+												<option value="13">分享</option>
+												<option value="16">公告</option>
+												<option value="1">Swift 语言</option>
+												<option value="10">意见区</option>
+												<option value="3">Swift 开源项目</option>
+												<option value="8">Playground</option>
+												<option value="4">招聘 &amp; 求职</option>
+												<option value="15">游戏</option>
+												<option value="9">线下活动</option>
+												<option value="14">Objective-C</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="markdown-area">
+										<ul class="nav nav-tabs">
+											<li class="active">
+												<a data-toggle="tab" href="#write_topic_new">编辑</a>
+											</li>
+											<li>
+												<a data-behaviors="preview" data-toggle="tab" href="#preview_topic_new">预览</a>
+											</li>
+										</ul>
+										<div class="tab-content">
+											<div class="tab-pane active" id="write_topic_new">
+												<textarea class="form-control" data-behaviors="autosize" id="topic_body" name="topic[body]" tabindex="3" style="overflow: hidden; word-wrap: break-word; resize: none; height: 120px;"></textarea>
+												<div class="file-upload">
+													<input id="file" multiple="multiple" name="file" tabindex="99" type="file">
+													<div class="text text-muted">
+														添加图片
+														<a>选择文件</a>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane" id="preview_topic_new">
+												<article class="preview"></article>
+											</div>
+										</div>
+									</div>
+								</div>
+								<input class="btn btn-success" data-disable-with="创建话题" name="commit" tabindex="4" type="submit" value="创建话题">
+								</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

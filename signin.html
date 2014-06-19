@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html class=" ">
+<head>
+	<title>Swiftist</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta keywords="swift, swiftist, swift语言,swift社区, 编程, 论坛, 教程, 问答, 热门, 新手, 入门, 热门, 最新, 订阅, 分类">
+	<meta description="Swiftist.org是国内领先的swift语言论坛。这里聚集了一大批锐意进取的iOS开发者和swiftist爱好者。Swiftist.org致力于为国内开发者提供详尽的中文文档、代码实例等，助力开发者掌握并使用这门新兴的编程语言。">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<nav class="navbar navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/">Swiftist</a>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="/signup?return_to=%2Ftopics%2Fcategoried%2Fobjc">注册</a>
+				</li>
+				<li>
+					<a href="/login?return_to=%2Ftopics%2Fcategoried%2Fobjc">登录</a>
+				</li>
+				<li class="navbar-toggle">
+					<a class="tiem" data-target="#navbar" data-toggle="collapse" type="button"> <i class="fa fa-bars"></i>
+					</a>
+				</li>
+			</ul>
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="/topics">社区</a>
+					</li>
+					<li>
+						<a href=" http://dev.swiftguide.cn/" target="_blank">新手指南</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">登录</h3>
+						</div>
+						<div class="panel-body">
+							<form accept-charset="UTF-8" action="/login" method="post">
+								<div style="display:none">
+									<input name="utf8" type="hidden" value="✓">
+									<input name="authenticity_token" type="hidden" value="RzyItaPNgBjuYJ6rWKdR89ETY6vNdKBR4IRuKjIJbkM="></div>
+								<div class="form-group">
+									<label for="__">帐号</label>
+									<input class="form-control" id="login" name="login" placeholder="用户名或邮箱" tabindex="1" type="text"></div>
+								<div class="form-group">
+									<label for="__">密码</label>
+									<input class="form-control" id="password" name="password" placeholder="密码" tabindex="2" type="password"></div>
+								<input class="btn btn-success" name="commit" tabindex="5" type="submit" value="登录"></form>
+							<hr>
+							<a href="/users/password/new">忘记密码？</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

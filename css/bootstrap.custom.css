@@ -1,0 +1,10 @@
+/*global*/
+body{background:#eee;}
+
+/*panel*/
+.panel{border:none;}
+.panel-heading{border-bottom:1px solid #eee;}
+.panel .panel-title{line-height: 35px;font-size: 1.2em;}
+.panel .panel-body .list-group{margin:-15px;}
+.list-group .list-group-item{border:none;border-bottom:1px solid #eee;}
+.panel .panel-body .list-group-item{padding:15px;}
